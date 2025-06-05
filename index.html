@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIO</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #004e83;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #formulario {
+            max-width: 450px;
+            width: 100%;
+            background: rgb(255, 255, 255);
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #004e83;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #004e83;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="formulario">
+        <h1>Formulário de Cadastro</h1>
+        <p style="text-align: center;">Preencha os campos abaixo:</p>
+
+        <form action="questionário.html" method="POST" target="_blank">
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="CPF">CPF:</label>
+            <input type="text" id="CPF" name="CPF" required>
+
+            <label for="Telefone">Telefone:</label>
+            <input type="text" id="Telefone" name="Telefone" required>
+
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" name="Email" required>
+
+            <button type="submit">ENVIAR</button>
+            <button type="reset">LIMPAR</button>
+
+            
+      <a href="telainicial.html" style="display: block; width: fit-content; margin: 20px auto 0; padding: 10px 20px; background-color: #ccc; color: #004e83; border-radius: 6px; text-decoration: none; text-align: center;">Voltar para a tela inicial</a>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
